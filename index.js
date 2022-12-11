@@ -16,7 +16,9 @@ app.use(cors({
     origin:"*"
 }))
 
-
+app.get("/",(req,res)=>{
+    res.send("send success")
+})
 
 
 app.post("/signup",async(req,res)=>{
